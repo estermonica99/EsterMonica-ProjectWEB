@@ -1,0 +1,159 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url("it.png");
+}
+h1{
+	text-align: center;
+	font-family: 'Raleway';
+	font-weight: 300;
+	font-size: 2.6em;
+	color: white;
+	margin: 8px;
+}
+img{
+	border-radius: 8px;
+}
+.galleryContainer{
+	width: 880px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+.gallery{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	width: 100%
+}
+.gallery input{
+	display: none;
+}
+.gallery > img:first-of-type{
+	position: relative;
+	display: flex;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.galleryImage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 0.25s ease-out;
+}
+.thumbnails{
+	margin-top: 10px;
+	height: 5%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+.thumbnailImage{
+	margin: 0 5px;
+}
+.thumbnailImage img{
+	width: 100%;
+	height: 80px;
+	object-fit: cover;
+	cursor: pointer;
+}
+.thumbnailImage:first-child{
+	margin-left: 0px;
+}
+.thumbnailImage:last-child{
+	margin-right: 0px;
+}
+
+#c1:checked + #i1{
+	opacity: 1;
+}
+
+#c2:checked + #i2{
+	opacity: 1;
+}
+
+#c3:checked + #i3{
+	opacity: 1;
+}
+
+#c4:checked + #i4{
+	opacity: 1;
+}
+
+#c5:checked + #i5{
+	opacity: 1;
+}
+
+#c6:checked + #i6{
+	opacity: 1;
+}
+
+#c7:checked + #i7{
+	opacity: 1;
+}
+
+#c8:checked + #i8{
+	opacity: 1;
+}
+
+#c9:checked + #i9{
+	opacity: 1;
+}
+
+#c10:checked + #i10{
+	opacity: 1;
+}
+
+#c11:checked + #i11{
+	opacity: 1;
+}
+
+#c12:checked + #i12{
+	opacity: 1;
+}
+
+#c13:checked + #i13{
+	opacity: 1;
+}
+
+#c14:checked + #i14{
+	opacity: 1;
+}
+
+#c15:checked + #i15{
+	opacity: 1;
+}
+
+#c16:checked + #i16{
+	opacity: 1;
+}
+
+@media(max-width: 900px)
+{
+	h1{
+		font-size: 1.5em;
+	}
+	.container{
+		max-width: 700px;
+		padding: 15px;
+	}
+	.galleryContainer{
+		width: 100%;
+		margin: 0;
+	}
+	.thumbnail
+}
